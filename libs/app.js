@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const libs = process.cwd() + '/libs/';
-
-const config = require('./config');
 const log = require('./logger')(module);
 
+const mongoose = require('./db/mongoose');
+
 const api = require('./routes/api');
+const user = require('./routes/user');
 
 const app = express();
 
@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', api);
 app.use('/api', api);
+app.use('/user', user);
 
 app.use((req, res, next) => {
     res.status(404);
