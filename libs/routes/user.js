@@ -1,8 +1,9 @@
 const express = require('express');
 
-const User = require('../model/user');
+const lib = process.cwd() + '/libs/';
 
-const log = require('../logger')(module);
+const User = require(lib + 'model/user');
+const log = require(lib + 'logger')(module);
 
 var router = express.Router();
 
