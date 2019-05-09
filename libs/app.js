@@ -3,8 +3,6 @@ const bodyParser = require('body-parser');
 
 const log = require('./logger')(module);
 
-const mongoose = require('./db/mongoose');
-
 const api = require('./routes/api');
 const user = require('./routes/user');
 const post = require('./routes/post');
