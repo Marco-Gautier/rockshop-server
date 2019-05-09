@@ -5,6 +5,7 @@ const log = require('./logger')(module);
 
 const api = require('./routes/api');
 const user = require('./routes/user');
+const post = require('./routes/post');
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/', api);
 app.use('/api', api);
 app.use('/user', user);
+app.use('/post', post);
 
 app.use((req, res, next) => {
     res.status(404);
