@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', api);
 app.use('/api', api);
-app.use('/user', user);
-app.use('/post', post);
+app.use('/api/user', user);
+app.use('/api/post', post);
 
 app.use((req, res, next) => {
     res.status(404);
