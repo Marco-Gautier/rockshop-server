@@ -2,7 +2,7 @@ const express = require('express');
 
 const lib = process.cwd() + '/libs/';
 
-const Post = require(lib + 'model/Post');
+const Post = require(lib + 'model/post');
 const log = require(lib + 'logger')(module);
 
 var router = express.Router();
