@@ -1,0 +1,6 @@
+
+{
+    "mongoose": {
+        "uri": "mongodb+srv://marco-gautier:26utHlPWmzHthIX2@cluster0-anwdv.mongodb.net/test?retryWrites=true"
+    }
+}
