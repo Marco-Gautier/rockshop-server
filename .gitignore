@@ -10,3 +10,5 @@
 vgcore.*
 node_modules
 all.log
+deploy_rsa.pub
+deploy_rsa
