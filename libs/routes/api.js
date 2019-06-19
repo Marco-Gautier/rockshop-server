@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', (req, res) => {
     res.status(200).json({
-        msg: 'the API is up'
+        msg: 'API is up'
     });
 });
 
