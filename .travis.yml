@@ -10,7 +10,8 @@ addons:
   - marc0.fr:4242
   - 51.77.202.182:4242
 before_script:
-- npm start
+  - npm start &
+  - sleep 15
 after_script:
   - tar -cf .travis/deploy.tar .
 before_install:
