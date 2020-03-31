@@ -1,7 +1,12 @@
 {
     "port": 3000,
-    "mongoose": {
-        "uri": "mongodb+srv://marco-gautier:26utHlPWmzHthIX2@cluster0-anwdv.mongodb.net/test?retryWrites=true"
+    "mongodb": {
+        "uri": "mongodb+srv://marco-gautier:26utHlPWmzHthIX2@cluster0-anwdv.mongodb.net/test?retryWrites=true",
+        "config": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true,
+            "useCreateIndex": true
+        }
     },
     "default":  {
         "user": {
