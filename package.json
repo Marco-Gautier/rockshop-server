@@ -35,15 +35,9 @@
     }
   },
   "dependencies": {
-<<<<<<< HEAD
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
-=======
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mongoose": "^5.7.5",
->>>>>>> master
     "nconf": "^0.10.0",
     "winston": "^3.2.1",
     "snyk": "^1.305.0"
