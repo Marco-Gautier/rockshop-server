@@ -22,6 +22,11 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use((req, res, next) => {
+    log.info('%s %s %s', req.method, res.statusCode, req.url);
+    next();
+});
+
 app.use('/', api);
 app.use('/api', api);
 app.use('/api/user', user);
@@ -29,7 +34,6 @@ app.use('/api/post', post);
 
 app.use((req, res, next) => {
     res.status(404);
-    log.debug('%s %d %s', req.method, res.statusCode, req.url);
     res.json({
         error: 'Not found'
     });
@@ -38,7 +42,6 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
     res.status(err.status || 500);
-    log.error('%s %d %s', req.method, res.statusCode, err.message);
     res.json({
         error: err.message
     });
