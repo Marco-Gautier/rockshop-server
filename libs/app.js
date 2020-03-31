@@ -9,6 +9,7 @@ const mongoose = require('./db/mongoose');
 const api = require('./routes/api');
 const user = require('./routes/user');
 const post = require('./routes/post');
+const product = require('./routes/Shop/product');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use('/', api);
 app.use('/api', api);
 app.use('/api/user', user);
 app.use('/api/post', post);
+app.use('/api/products', product);
 
 app.use((req, res, next) => {
     res.status(404);
