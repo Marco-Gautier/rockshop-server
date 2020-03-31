@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const libs = process.cwd() + '/libs/';
 const config = require(libs + 'config');
-const log = require(libs + 'logger');
+const log = require(libs + 'logger')(module);
 
 const mongo_uri = config.get('mongodb:uri');
 const mongo_config = config.get('mongodb:config');
