@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "bb0973d5-fe39-4e44-8b0c-a6c294ba4631",
+		"name": "rockshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Fetch all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch specific product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products/123",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Title\": \"Test product\",\n\t\"Descritpion\": \"This is a test product: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus eros, tristique non mauris eu, euismod varius nisl. Ut in risus sit amet dolor tincidunt tempus in a felis. Sed rutrum, tellus at auctor aliquam, nisl nibh imperdiet mauris, viverra lacinia erat neque vel mi. Sed in imperdiet arcu. In tristique vitae ante et dictum. Donec quis eros pretium, sollicitudin lorem nec, pretium mauris. Cras aliquam, massa vitae finibus condimentum, erat massa molestie quam, pulvinar dictum mauris mauris a nibh. Suspendisse potenti. Mauris nec volutpat mauris. Fusce imperdiet venenatis tellus, in finibus arcu commodo in. Integer metus quam, tempus vel maximus in, volutpat cursus dui. Etiam id rhoncus tortor. Aliquam convallis cursus purus, eu tincidunt orci fringilla eget. Vestibulum vitae sapien vitae sapien ornare iaculis at sagittis sapien. Sed facilisis malesuada pharetra. Maecenas varius ornare odio, vel finibus nisi dapibus nec. Duis mollis dui quis elementum volutpat. Nunc pellentesque condimentum leo, ac sollicitudin dui fermentum rhoncus. Aenean commodo enim leo, at dignissim est ornare sed. Cras vestibulum urna odio, vel malesuada orci elementum nec. Aliquam a nunc eu sem lacinia viverra sit amet vitae lectus. Mauris sit amet tellus efficitur, lobortis augue in, varius orci. Praesent sollicitudin orci justo, eu scelerisque massa finibus id. Suspendisse congue tortor quis erat maximus, faucibus hendrerit felis iaculis. Integer facilisis lectus at aliquam sollicitudin. Aenean dictum libero mi, eget vehicula velit fermentum eu. Aliquam nisi ipsum, rutrum non mollis a, blandit non risus. Mauris condimentum suscipit sodales. Integer iaculis, mi ut pulvinar malesuada, velit felis accumsan dolor, et commodo arcu augue sed urna. Etiam sem lectus, consequat et pretium sit amet, convallis eget lectus. Proin sit amet nisl sed diam rutrum tincidunt at sagittis tellus. Mauris in suscipit lacus. Etiam rutrum porttitor libero, sit amet sodales nisi cursus et. Aliquam eleifend, tellus quis tincidunt finibus, arcu nibh gravida sem, ut aliquam mauris eros quis lacus. Nulla ullamcorper nulla mi, iaculis pellentesque ligula mattis non. Fusce non sapien elit. Etiam ornare magna dapibus consequat sagittis. Proin facilisis placerat consequat. Curabitur velit leo, accumsan eget sem a, tempus vestibulum ipsum. Suspendisse iaculis nisl eget tempus euismod. Morbi commodo consequat venenatis. Nunc vitae tortor luctus, malesuada neque at, molestie leo. Vivamus dapibus quam eu ante congue, in cursus sapien congue. Sed sed porta diam. Donec vestibulum varius tristique. Ut lacinia maximus accumsan. Vestibulum sed dapibus nisi. Duis molestie egestas quam, a porta erat sollicitudin eu. In placerat suscipit pellentesque. Maecenas sit amet scelerisque velit. Aliquam nunc arcu, lobortis a euismod et, tincidunt vitae nisl. Maecenas at accumsan nisi, quis facilisis libero. Mauris mattis elit eu justo aliquet pellentesque. Nunc ac convallis nisi, sed sodales nunc. Proin malesuada nunc vel ex volutpat blandit. Donec et est vel urna interdum pellentesque. Vivamus dictum, velit id commodo varius, diam ipsum pretium lectus, malesuada posuere sem velit ac nisl. Donec dui purus, consectetur at congue et, malesuada et justo. Donec placerat diam quis viverra iaculis. Duis quis massa vehicula, facilisis velit efficitur, scelerisque lacus. In vel risus massa. Maecenas tempor, augue eu ornare elementum, ipsum neque varius tellus, sed interdum tellus arcu at mi. Sed eu velit dignissim, laoreet massa ut, laoreet tellus. Sed aliquam scelerisque odio nec consequat. Ut lobortis arcu quis sollicitudin aliquam. Suspendisse hendrerit eu urna ultricies dictum.\",\n\t\"Price\": \"42.00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

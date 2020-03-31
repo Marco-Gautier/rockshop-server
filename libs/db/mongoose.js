@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 
 const libs = process.cwd() + '/libs/';
 const config = require(libs + 'config');
-const log = require(libs + 'logger');
+const log = require(libs + 'logger')(module);
 
-mongoose.connect(config.get('mongoose:uri'))
+const mongo_uri = config.get('mongodb:uri');
+const mongo_config = config.get('mongodb:config');
+
+mongoose.connect(mongo_uri, mongo_config)
     .then(() => {
         log.debug('connected to database');
     })
